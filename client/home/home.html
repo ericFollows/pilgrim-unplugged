@@ -1,0 +1,29 @@
+<template name="Home">
+
+	<div>
+		<ul>
+			<li>
+				<a href="{{pathFor route='home'}}">Home</a></li>
+			<li>
+				<a href="{{pathFor route='blog'}}">Blog</a></li>
+			<li>
+				<a href="{{pathFor route='gallery'}}">Gallery</a></li>
+			<li>
+				<a href="{{pathFor route='about'}}">About</a></li>
+			<li>
+				<a href="{{pathFor route='contact'}}">Contact</a></li>
+		</ul>
+	</div>
+
+	<h1>{pilgrim: unplugged}</h1>
+
+	<p>This site is a collection of stories from a traveler, who also happens to be a designer and a web developer. By passing my experiences through that particular lens, I hope to share a few interesting reflections on my journey. Unlike most travel blogs, however, I won't be telling you where to go on your vacation. That's for you to decide. My only hope is that I inspire you to get out and follow your path, wherever it might lead.</p>
+
+	<div>
+		{{> atNavButton}}
+	</div>
+
+	<footer>
+
+	</footer>
+</template>
