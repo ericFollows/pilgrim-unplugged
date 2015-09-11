@@ -46,3 +46,8 @@ Router.route('/contact', {
 	name: 'contact',
 	template: 'Contact'
 });
+
+Router.route('/signin', {
+	name: 'signIn',
+	template: 'SignIn'
+});

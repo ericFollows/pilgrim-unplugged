@@ -2,16 +2,21 @@
 
 h1, h3, h5 {
 	font-family: $primFont;
-	color: #8b3626;
+	color: $reddrk;
 }
 
 h2, h4, h6 {
 	font-family: $secFont;
+	color: $reddrk;
 }
 
 p {
 	font-family: $primFont;
 	color: $offblk;
+}
+
+.darkbackground {
+	color: $offwht;
 }
 
 /* link styling */
