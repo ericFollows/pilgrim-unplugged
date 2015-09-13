@@ -1,14 +1,20 @@
 <template name="Main">
 
 	<div>
+		<div class="top-bar">
+			<img class="theMark" src="img/Pilgrim_Logo.png" alt="Pilgrim Logo">
+		</div>
+
 		<img class="heroImage" src="img/Pilgrim_Landing_Page_Lg.jpg" alt="Pilgrim USB Boot Laces">
-		<h1>{pilgrim: unplugged}</h1>
-		<h4>Digital Tales From An Analog Trail</h4>
+
+		<div class="brandIdentity">
+			<h1 class="typeLockup">{pilgrim: unplugged}</h1>
+			<h4 class="tagline">Digital Tales From An Analog Trail</h4>
+		</div>
 	</div>
-
 {{> navigation}}
-{{> yield}}
+
+	{{> yield}}
+
 {{> footer}}
-
-
 </template>

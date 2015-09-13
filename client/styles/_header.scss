@@ -1,3 +1,22 @@
-div.heroImage {
-	height: 100vm;
+.heroImage {
+	position: relative;
+}
+
+.brandIdentity {
+	position: absolute;
+	top: 250px;
+	left: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.typeLockup {
+	color: $offwht;
+	font-size: 5em;
+}
+
+.tagline {
+	color: $offwht;
+	font-size: 2em;
+	font-weight: lighter;
 }

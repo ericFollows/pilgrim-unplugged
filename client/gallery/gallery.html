@@ -1,21 +1,25 @@
 <template name="Gallery">
+<div class="content">
+	<div class="row">
+		<div class="medium-up-8 medium-offset-2">
+			<h3>Photography</h3>
 
-<h3>Photography</h3>
+				<button class="radius">
+					<a href="{{pathFor route='photography'}}">See More Work</a>
+				</button>
 
-	<button class="radius">
-		<a href="{{pathFor route='photography'}}">See More Work</a>
-	</button>
+			<h3>Graphic Design</h3>
 
-<h3>Graphic Design</h3>
+				<button class="radius">
+					<a href="{{pathFor route='graphicDesign'}}">See More Work</a>
+				</button>
 
-	<button class="radius">
-		<a href="{{pathFor route='graphicDesign'}}">See More Work</a>
-	</button>
+			<h3>Web Development</h3>
 
-<h3>Web Development</h3>
-
-	<button class="radius">
-		<a href="{{pathFor route='webDevelopment'}}">See More Work</a>
-	</button>
-
+				<button class="radius">
+					<a href="{{pathFor route='webDevelopment'}}">See More Work</a>
+				</button>
+		</div>
+	</div>
+</div>
 </template>

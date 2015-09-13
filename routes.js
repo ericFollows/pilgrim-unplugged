@@ -51,3 +51,8 @@ Router.route('/signin', {
 	name: 'signIn',
 	template: 'SignIn'
 });
+
+Router.route('/addpost', {
+	name: 'addPost',
+	template: 'AddPost'
+});
