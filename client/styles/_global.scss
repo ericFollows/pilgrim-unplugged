@@ -1,9 +1,13 @@
 body {
-	background-color: $offwht;
+	background-color: $offWhite;
 }
 
 .content {
 		max-width: 850px;
 		margin-top: 5em;
 		margin-bottom: 5em;
+}
+
+.darkbackground {
+	color: $offWhite;
 }

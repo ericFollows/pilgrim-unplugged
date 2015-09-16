@@ -1,42 +1,46 @@
 /* text styling */
 
-h1, h3, h5 {
+h1 {
 	font-family: $primFont;
-	color: $reddrk;
+	color: $offBlack;
+	font-size: 1.75em;
 }
 
-h2, h4, h6 {
+h2 {
 	font-family: $secFont;
-	color: $reddrk;
+	color: $primaryDrk;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: $primFont;
+	color: $primaryDrk;
+	font-size: 1em;
 }
 
 p {
 	font-family: $primFont;
-	color: $offblk;
-}
-
-.darkbackground {
-	color: $offwht;
+	color: $offBlack;
 }
 
 /* link styling */
 
-a {
+p a {
 	font-family: $secFont;
-	text-transform: uppercase;
-	color: $redlgt;
+	font-style: italic;
+	color: $action;
 }
 
-a:hover {
-	color: $redmed;
+p a:hover {
+	color: $actionMed;
 }
 
-a:active {
-	color: $reddrk;
+p a:active {
+	color: $actionDrk;
 }
 
 /* button styling */
 
 button & a {
-	color: $offwht;
+	color: $offWhite;
 }
