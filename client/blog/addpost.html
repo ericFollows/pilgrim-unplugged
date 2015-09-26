@@ -1,9 +1,45 @@
 <template name="AddPost">
-<div class="content">
-	<div class="row">
-		<div class="medium-up-8 medium-offset-2">
-			<p>Add Post</p>
+
+		<div class="medium-up-12 medium-offset-4">
+			<form id="postForm" role="form">
+				<div class="row">
+					<div class="large-12 columns">
+					  <label>Post Date
+					    <input type="text" id="postDate" placeholder="Enter publication date as 'Month dd, yyyy'" />
+					  </label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+					  <label>Post Name
+					    <input type="text" id="postTitle" placeholder="Insert article title here, sentence case" />
+					  </label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+					  <label>Post Slug
+					    <input type="text" id="postSlug" placeholder="enter-post-slug-lowercase-and-hyphenated" />
+					  </label>
+					</div>
+				</div>
+				<div class="row">
+				    <div class="large-12 columns">
+				      <label>Post Body
+				        <textarea id="postBody" placeholder="Insert Markdown formated article here"></textarea>
+				      </label>
+				    </div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+					    <label>Post Tags
+					    	<input type="text" id="postTags" placeholder="List relevant tags here">
+					    </label>
+					</div>
+				</div>
+				<br>
+				<button type="submit" class="button radius">Submit</button>
+			</form>
 		</div>
-	</div>
-</div>
+
 </template>

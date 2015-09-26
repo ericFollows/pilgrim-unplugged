@@ -3,13 +3,14 @@
 h1 {
 	font-family: $primFont;
 	color: $offBlack;
-	font-size: 1.75em;
+	font-size: 2em;
 }
 
 h2 {
 	font-family: $secFont;
 	color: $primaryDrk;
 	font-size: 1.5em;
+	font-style: bold;
 }
 
 h3 {
@@ -21,6 +22,21 @@ h3 {
 p {
 	font-family: $primFont;
 	color: $offBlack;
+}
+
+.post-date {
+	font-family: $secFont;
+	color: $offBlack;
+	font-size: 1.25em;
+	font-weight: lighter;
+}
+
+.post-name {
+	color: $action;
+}
+
+.post-name:hover {
+	color: $actionMed;
 }
 
 /* link styling */
@@ -36,6 +52,20 @@ p a:hover {
 }
 
 p a:active {
+	color: $actionDrk;
+}
+
+a.inline-link {
+	font-family: $secFont;
+	font-style: italic;
+	color: $action;
+}
+
+a.inline-link:hover {
+	color: $actionMed;
+}
+
+a.inline-link:active {
 	color: $actionDrk;
 }
 

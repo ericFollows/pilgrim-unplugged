@@ -16,13 +16,23 @@ iron:router
 # styles
 ewall:foundation
 mrt:normalize.css
+fourseven:scss
+fortawesome:fontawesome
+markdown
 
 # accounts
+accounts-ui
 accounts-facebook
 accounts-google
 accounts-twitter
 accounts-password
-useraccounts:foundation
+useraccounts:core
 useraccounts:iron-routing
-fourseven:scss
-fortawesome:fontawesome
+useraccounts:foundation
+
+# SEO
+spiderable
+gadicohen:phantomjs
+phantomjs
+sitemaps
+manuelschoebel:ms-seo

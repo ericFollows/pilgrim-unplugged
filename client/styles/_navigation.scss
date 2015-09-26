@@ -1,5 +1,26 @@
-.sub-nav {
+.theMark {
+	padding: 1em;
+}
+
+.top-bar {
+	padding-bottom: 5em;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation {
 	background-color: $offBlack;
+}
+
+.sub-nav {
+	background-color: $offBlack !important;
+}
+
+.sub-nav dd a {
+	color: $offWhite;
+}
+
+dd#selectedNav.nav-button {
+	color: $action !important;
 }
 
 .nav-button {
@@ -7,4 +28,8 @@
 	font-style: normal;
 	text-transform: uppercase;
 	color: $offWhite;
+}
+
+a:focus {
+	outline: none;
 }

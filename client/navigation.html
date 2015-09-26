@@ -1,20 +1,26 @@
 <template name="navigation">
 
-	<div data-magellan-expedition="fixed">
-		<ul class="sub-nav unstyled-list inline-list">
-			<li class="nav-button" data-magellan-arrival="home">
-				<a href="{{pathFor route='home'}}">Home</a></li>
-			<li class="nav-button" data-magellan-arrival="blog">
-				<a href="{{pathFor route='blog'}}">Blog</a></li>
-			<li class="nav-button" data-magellan-arrival="gallery">
-				<a href="{{pathFor route='gallery'}}">Gallery</a></li>
-			<li class="nav-button" data-magellan-arrival="about">
-				<a href="{{pathFor route='about'}}">About</a></li>
-			<li class="nav-button" data-magellan-arrival="contact">
-				<a href="{{pathFor route='contact'}}">Contact</a></li>
-			<li class="nav-button" data-magellan-arrival="signin">
-				<a href="{{pathFor route='signIn'}}">Sign In</a></li>
-		</ul>
-	</div>
+<div class="navigation" data-magellan-expedition="fixed">
+	<dl class="sub-nav unstyled-list inline-list">
+		<dd class="nav-button" id="{{selectedPage 'home'}}"
+			data-magellan-arrival="home">
+			<a href="{{pathFor route='home'}}">Home</a></dd>
+		<dd class="nav-button" id="{{selectedPage 'blog'}}"
+			data-magellan-arrival="blog|post">
+			<a href="{{pathFor route='blog'}}">Blog</a></dd>
+		<dd class="nav-button" id="{{selectedPage 'gallery'}}"
+			data-magellan-arrival="gallery">
+			<a href="{{pathFor route='gallery'}}">Gallery</a></dd>
+		<dd class="nav-button" id="{{selectedPage 'about'}}"
+			data-magellan-arrival="about">
+			<a href="{{pathFor route='about'}}">About</a></dd>
+		<dd class="nav-button" id="{{selectedPage 'contact'}}"
+			data-magellan-arrival="contact">
+			<a href="{{pathFor route='contact'}}">Contact</a></dd>
+		<dd class="nav-button" id="{{selectedPage 'signin'}}"
+			data-magellan-arrival="signin">
+			<a href="{{pathFor route='signIn'}}">Sign In</a></dd>
+	</dl>
+</div>
 
 </template>

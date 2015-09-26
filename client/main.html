@@ -12,9 +12,11 @@
 			<h4 class="tagline">Digital Tales From An Analog Trail</h4>
 		</div>
 	</div>
-{{> navigation}}
-
-	{{> yield}}
-
-{{> footer}}
+		{{> navigation}}
+	<div class="content">
+		<div class="row">
+			{{> yield}}
+		</div>
+	</div>
+		{{> footer}}
 </template>

@@ -1,26 +1,18 @@
 <template name="Blog">
-<div class="content">
-	<div class="row">
-		<div class="medium-up-8 medium-offset-2">
-			<h1>Sample blog post: Can you write one?</h1>
-			<h2>Not as hard as you might think</h2>
-			<p>Writing a blog post isn't as difficult as it might seem, but it <strong>is</strong> quite different from the form of writing we learned as children in school. The way information is conveyed on paper demands that we write to facilitate the reader, and in the same sense we should be aware of how a reader engages our content online, and adjust acordingly.</p>
-			<h2>Starting with the overview</h2>
-			<p>Readers scan and jump around on a webpage, so writing in a linear fashion might help you to structure your thoughts, but it might create a slow and uninteresting pace for the reader. Content that hasn't been clearly divided and demarcated could be difficult for a reader to scan, and could result in information not being quickly or clearly found...and this demarcation is where we will start.</p>
-			<h2>Covering all your bases</h2>
-				<ul>
-					<li>Start with an outline of the sections in H2 tags</li>
-					<li>Use these to break up content and organize you thoughts</li>
-					<li>Review structure and add sections to fill out the content</li>
-					<li>Fill in the details for each section created</li>
-				</ul>
-			<h2>Filling in the content</h2>
-			<p>It is much easier consuming a sandwich, one bite at a time, and so it is with reading. Trying to take in an entire page with your perifreal vision is like stuffing a whole sandwich down your throat. We read one sentence at a time, but often we don't even stop to read. We scan</p>
-			<p>Organizing your content to make scaning easier makes the viewers consumption easier as well, and that creates happy subscribers. But the writer might find the process enjoyable as well.</p>
-			<p>Filling in content for a single point in your outline will be simpler, as you have a focus, and editing will be faster, as you can relocate sections without extensive searching.</p>
-			<h2>Wrap it all up</h2>
-			<p>Once the majority of the content has been written, go back and add relevant images or video, link to useful or similar content on your own site (like this one <a href="#">here</a>) or link to someone elses page (like <a href="#">this</a>), and clean up your styles.</p>
-		</div>
+
+	<div class="medium-up-12 medium-offset-4">
+		<ul class="unstyled-list">
+			{{#each listPosts}}
+				<li>
+				  	<img src="img/{{postSlug}}.jpg" alt="{{postTitle}}">
+						<h4 class="post-date">{{postDate}}</h4>
+				    <a href="/blog/{{postSlug}}">
+				    	<h1 class="post-name">{{postTitle}}</h1>
+				    </a> 
+				  		{{#markdown}}{{synopsis}}&hellip;{{/markdown}}
+				</li>
+			{{/each}}
+		</ul>
 	</div>
-</div>
+
 </template>

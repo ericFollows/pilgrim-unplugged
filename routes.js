@@ -12,9 +12,13 @@ Router.route('/blog', {
 	template: 'Blog'
 });
 
-	Router.route('/blog/:_id', function() {
-		var post = Post.findOne({_id: this.params._id});
-		this.render('Post', {data: post});
+	Router.route('/blog/:postSlug', {
+		name: 'post',
+		template: 'Post',
+		data: function() {
+			var currentPost = this.params.postSlug;
+			return Posts.findOne({"postSlug": currentPost});
+		}
 	});
 
 Router.route('/gallery', {

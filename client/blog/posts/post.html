@@ -1,5 +1,20 @@
 <template name="Post">
 
-<p>Single Blog Post</p>
+	<div class="medium-up-12 medium-offset-4">
+		<img src="img/{{postSlug}}.jpg" alt="{{postTitle}}">
+		<h4 class="post-date">{{postDate}}</h4>
+		<h1>{{postTitle}}</h1>
+		{{#markdown}}{{postBody}}{{/markdown}}
+			<br>
+		<a class="inline-link" href="{{pathFor route='blog'}}">Back to the Archives</a>
+		<!--
+		<div>
+				COMMENTS LISTED AT BOTTOM
+			{{#if currentUser}}
+				ADD COMMENT SECTION HERE
+			{{/if}}
+		</div>
+		-->
+	</div>
 
 </template>
